@@ -356,6 +356,55 @@ button:focus-visible {
   margin: 0 0 2.25rem;
 }
 
+.paper-card {
+  margin-bottom: 1.5rem;
+  padding: clamp(1.35rem, 3vw, 1.8rem);
+  border: 1px solid var(--border);
+  border-radius: 1rem;
+  background: var(--surface);
+  box-shadow: 0 8px 24px rgba(31, 42, 59, 0.055);
+}
+
+:root[data-theme="dark"] .paper-card {
+  box-shadow: 0 8px 26px rgba(0, 0, 0, 0.18);
+}
+
+.paper-card .paper-badge {
+  display: inline-block;
+  margin: 0 0 1rem;
+  padding: 0.28rem 0.72rem;
+  border-radius: 999px;
+  background: color-mix(in srgb, var(--link) 11%, var(--surface));
+  color: var(--heading);
+  font-size: 0.82rem;
+  font-weight: 700;
+  letter-spacing: 0.01em;
+  line-height: 1.35;
+}
+
+.paper-card h4 {
+  margin-bottom: 0.8rem;
+}
+
+.paper-card .paper-summary {
+  margin: 0 0 1rem;
+  color: var(--text);
+  font-size: 0.98rem;
+  line-height: 1.68;
+}
+
+.paper-card .authors {
+  margin-top: 0;
+}
+
+.paper-card .paper-award {
+  margin: 0.7rem 0 0;
+  color: var(--accent);
+  font-size: 0.88rem;
+  font-weight: 650;
+  line-height: 1.5;
+}
+
 .paper h4 {
   margin: 0 0 0.38rem;
   color: var(--heading);
@@ -622,6 +671,11 @@ footer a {
   .news-list li {
     grid-template-columns: 1fr;
     gap: 0.15rem;
+  }
+
+  .paper-card {
+    padding: 1.2rem;
+    border-radius: 0.85rem;
   }
 
   .teaching-list li {
