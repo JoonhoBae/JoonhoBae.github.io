@@ -29,21 +29,37 @@
   <body>
     <a class="skip-link" href="#main-content">Skip to content</a>
 
-    <button class="theme-toggle" type="button" aria-label="Switch color theme" title="Switch color theme">
-      <svg class="sun-icon" aria-hidden="true" viewBox="0 0 24 24">
-        <circle cx="12" cy="12" r="4"></circle>
-        <path d="M12 2v2M12 20v2M4.93 4.93l1.42 1.42M17.66 17.66l1.41 1.41M2 12h2M20 12h2M4.93 19.07l1.42-1.42M17.66 6.34l1.41-1.41"></path>
-      </svg>
-      <svg class="moon-icon" aria-hidden="true" viewBox="0 0 24 24">
-        <path d="M20.5 14.2A8.5 8.5 0 0 1 9.8 3.5 8.5 8.5 0 1 0 20.5 14.2Z"></path>
-      </svg>
-    </button>
+    <header class="site-header">
+      <div class="header-inner">
+        <a class="site-brand" href="#about">Joonho Bae</a>
+
+        <div class="header-actions">
+          <nav class="section-nav" aria-label="Page sections">
+            <a href="#about">About</a>
+            <a href="#papers">Papers</a>
+            <a href="#teaching">Teaching</a>
+            <a href="#industry">Industry</a>
+            <a href="assets/Joonho_Bae_CV.pdf" target="_blank" rel="noreferrer">CV</a>
+          </nav>
+
+          <button class="theme-toggle" type="button" aria-label="Switch color theme" title="Switch color theme">
+            <svg class="sun-icon" aria-hidden="true" viewBox="0 0 24 24">
+              <circle cx="12" cy="12" r="4"></circle>
+              <path d="M12 2v2M12 20v2M4.93 4.93l1.42 1.42M17.66 17.66l1.41 1.41M2 12h2M20 12h2M4.93 19.07l1.42-1.42M17.66 6.34l1.41-1.41"></path>
+            </svg>
+            <svg class="moon-icon" aria-hidden="true" viewBox="0 0 24 24">
+              <path d="M20.5 14.2A8.5 8.5 0 0 1 9.8 3.5 8.5 8.5 0 1 0 20.5 14.2Z"></path>
+            </svg>
+          </button>
+        </div>
+      </div>
+    </header>
 
     <div class="page-shell">
       <aside class="profile" aria-label="Joonho Bae profile">
         <img
           class="profile-photo"
-          src="assets/joonho-bae.jpg"
+          src="assets/joonho-bae.png"
           alt="Joonho Bae"
           width="936"
           height="952"
@@ -60,7 +76,7 @@
           <a class="email" href="mailto:baejoon@iu.edu">baejoon@iu.edu</a>
 
           <nav class="profile-links" aria-label="Professional profiles">
-            <a href="assets/Joonho_Bae_CV.pdf">CV</a>
+            <a href="assets/Joonho_Bae_CV.pdf" target="_blank" rel="noreferrer">CV</a>
             <span aria-hidden="true">·</span>
             <a href="https://scholar.google.com/citations?hl=en&amp;user=TiBgLJMAAAAJ" target="_blank" rel="noreferrer">Google Scholar</a>
             <span aria-hidden="true">·</span>
@@ -72,7 +88,7 @@
       </aside>
 
       <main id="main-content" class="content">
-        <section class="intro" aria-labelledby="about-heading">
+        <section id="about" class="intro" aria-labelledby="about-heading">
           <h2 id="about-heading" class="visually-hidden">About</h2>
           <p class="welcome">Welcome! My name is Joonho <span class="pronunciation">(pronounced like Juneau, the capital of Alaska)</span>.</p>
           <p>
@@ -95,7 +111,7 @@
           </p>
         </section>
 
-        <section aria-labelledby="news-heading">
+        <section hidden aria-labelledby="news-heading">
           <h2 id="news-heading">News</h2>
           <ol class="news-list">
             <li>
@@ -113,7 +129,7 @@
           </ol>
         </section>
 
-        <section aria-labelledby="papers-heading">
+        <section id="papers" aria-labelledby="papers-heading">
           <h2 id="papers-heading">Papers</h2>
 
           <h3 class="section-label">Working papers</h3>
@@ -124,7 +140,7 @@
               </a>
             </h4>
             <p class="authors">with Roman Kapuscinski and Wanshan Zhu</p>
-            <p class="status">Major Revision, <em>Management Science</em></p>
+            <!-- <p class="status">Major Revision, <em>Management Science</em></p> -->
             <div class="paper-links">
               <a href="https://papers.ssrn.com/sol3/papers.cfm?abstract_id=5041681" target="_blank" rel="noreferrer">SSRN</a>
             </div>
@@ -221,7 +237,7 @@
           </article>
         </section>
 
-        <section aria-labelledby="teaching-heading">
+        <section id="teaching" aria-labelledby="teaching-heading">
           <h2 id="teaching-heading">Teaching</h2>
 
           <h3 class="section-label">Instructor · Indiana University</h3>
@@ -239,7 +255,7 @@
           </p>
         </section>
 
-        <section aria-labelledby="experience-heading">
+        <section id="industry" aria-labelledby="experience-heading">
           <h2 id="experience-heading">Industry Experience</h2>
           <div class="experience-grid">
             <article>
