@@ -1,160 +1,273 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-  <meta charset="utf-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Joonho Bae | Kelley School of Business</title>
+    <meta
+      name="description"
+      content="Joonho Bae is an Assistant Professor at Indiana University's Kelley School of Business. His research focuses on sustainable operations, energy markets, battery systems, and risk management."
+    />
+    <meta name="author" content="Joonho Bae" />
+    <meta name="theme-color" content="#f7f8fb" media="(prefers-color-scheme: light)" />
+    <meta name="theme-color" content="#111721" media="(prefers-color-scheme: dark)" />
+    <link rel="canonical" href="https://joonhobae.com/" />
+    <link
+      rel="icon"
+      type="image/svg+xml"
+      href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%231d3557'/%3E%3Cpath d='M19 15h9v26c0 6-3 10-10 10-2 0-4-.4-6-1.2l2-7c1 .5 2 .7 3 .7 2 0 2-1.3 2-3.3V15Zm15 0h13c8 0 12 3 12 9 0 3-1.6 6-4.8 7.3 4 1.1 6.1 4.2 6.1 8.3 0 7-5 10.4-14.2 10.4H34V15Zm9 7v6h3c3 0 4.5-1 4.5-3s-1.5-3-4.5-3h-3Zm0 13v8h3.7c3.2 0 4.8-1.3 4.8-4s-1.7-4-5-4H43Z' fill='white'/%3E%3C/svg%3E"
+    />
+    <link rel="stylesheet" href="assets/styles.css" />
+    <script>
+      (() => {
+        const saved = localStorage.getItem("theme");
+        const prefersDark = window.matchMedia("(prefers-color-scheme: dark)").matches;
+        document.documentElement.dataset.theme = saved || (prefersDark ? "dark" : "light");
+      })();
+    </script>
+  </head>
+  <body>
+    <a class="skip-link" href="#main-content">Skip to content</a>
 
-  <title>Joonho Bae</title>
-  <meta name="description" content="Joonho Bae's homepage">
-  
-  <link href="./css/github-light.css" rel="stylesheet">
-  <link href="./css/style.css" rel="stylesheet">
-  
-  <script>
-  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
-  ga('create', 'UA-105343996-1', 'auto');
-  ga('send', 'pageview');
-  </script>
-  <meta name="google-site-verification" content="-DwpqBKnI4iRF1Lnso6e8tYFdhaOd5_U0TQc0Qqnf8A" />
-  
-</head>
-<body>
-  <div class="container">
-    <header>
-      <h2>Joonho Bae</h2>
-      <img src="./assets/joonho.png" style="width:400px;"><br />
-      <p>
-        baejh@umich.edu<br />        
-        Ph.D. Candidate<br />
-        University of Michigan-Ann Arbor<br />
-        Ann Arbor, Michigan, USA<br />
-        <a href="./assets/Bae, Joon-ho.pdf">CV</a><br />
-        <a href="http://linkedin.com/in/joonho-bae">LinkedIn</a>
-      </p>
-    </header>
+    <button class="theme-toggle" type="button" aria-label="Switch color theme" title="Switch color theme">
+      <svg class="sun-icon" aria-hidden="true" viewBox="0 0 24 24">
+        <circle cx="12" cy="12" r="4"></circle>
+        <path d="M12 2v2M12 20v2M4.93 4.93l1.42 1.42M17.66 17.66l1.41 1.41M2 12h2M20 12h2M4.93 19.07l1.42-1.42M17.66 6.34l1.41-1.41"></path>
+      </svg>
+      <svg class="moon-icon" aria-hidden="true" viewBox="0 0 24 24">
+        <path d="M20.5 14.2A8.5 8.5 0 0 1 9.8 3.5 8.5 8.5 0 1 0 20.5 14.2Z"></path>
+      </svg>
+    </button>
 
-    <section class="content">
-      <h3>About</h3>
-      <p>
-        
-        Please find my new hompage <a href="https://joonhobae.com/">here</a>! <br /><br />
-        
-        <i>“Judge your success by the degree that you’re enjoying peace, health, and love”</i><br /> - H. Jackson Brown Jr.<br /><br />
-        
-        Welcome! I am a Ph.D. candidate in Technology and Operations at the University of Michigan's Ross School of Business. I am co-advised by John Silberholz and Roman Kapuscinski.<br /><br />
+    <div class="page-shell">
+      <aside class="profile" aria-label="Joonho Bae profile">
+        <img
+          class="profile-photo"
+          src="assets/joonho-bae.jpg"
+          alt="Joonho Bae"
+          width="936"
+          height="952"
+        />
 
-        Motivated by a multidisciplinary background in statistics, financial economics, and industrial engineering, I made on the topic of operations management and management science, especially regarding energy markets. My current research focuses on establishing generalizable lessons on optimal control of battery energy storage systems using analytical modeling frameworks.<br /><br />
-        
-        Before coming to Michigan, I received my B.S. in Statistics and Financial Economics from Seoul National University (SNU) in 2016 and M.S. in Industrial & Systems Engineering from Korea Advanced Institute of Science and Technology (KAIST) in 2019. I also have several working experiences that shaped my research interests in operations management. I co-founded and led a start-up for blind masseurs (Cham Son Gil Cooperative), which recently opened its 8th branch in South Korea.  After graduating SNU, I spent a year working at SK Telecom as a full-time marketing manager.         
-     </p>
+        <div class="profile-copy">
+          <h1>Joonho Bae</h1>
+          <p class="role">Assistant Professor</p>
+          <p class="affiliation">
+            <a href="https://kelley.iu.edu/" target="_blank" rel="noreferrer">Kelley School of Business</a><br />
+            Indiana University
+          </p>
 
-      <h3>Education</h3>
-      <ul>
-        <li>University of Michigan-Ann Arbor, Technology & Operations, Sep 2019 - Present </li>
-        <li>Korea Advanced Institute of Science and Technology (KAIST), M.S., Industrial & Systems Engineering, Feb 2017 – Feb 2019</li>
-        <li>Seoul National University, B.S., Statistics, Mar 2009 – Feb 2016</li>
-        <li>Seoul National University, B.S., Financial Economics Minor, Mar 2009 – Feb 2016</li>
-      </ul>
-      
-      <h3>Research Experience</h3>
-      <ul>
-        <li>Visiting Scholar, KAIST (Feb 2019 - Jul 2019)</li>
-        <li>Research Assistant, KAIST, Sponsor: LG CNS (Jul 2018 – Feb 2019)</li>
-        <li>Research Assistant, KAIST, Sponsor: Kantar TNS (Mar 2017 – Feb 2019)</li>
-        <li>Research Assistant, Seoul National University, Time Series Analysis Lab (Dec 2012 – Feb 2013)</li>
-      </ul>
+          <a class="email" href="mailto:baejoon@iu.edu">baejoon@iu.edu</a>
 
-      <h3>Work Experience</h3>
-      <ul>
-        <li>Marketing Manager, SK Telecom (Jan 2016 – Feb 2017)</li>
-        <li>Marketing Intern, SK Telecom (Jun 2015 – Aug 2015)</li>
-        <li>Co-Founder, Team Leader, <a href="https://chamsongil.com/">ChamSonGil Cooperative</a> (Sep 2013 – Jul 2015)</li>
-        <li>Sergeant, HHC, 8th U.S. ARMY (May 2010 – Feb 2012)</li>
-      </ul>
-      
-      <h3>Teaching Experience</h3>
-      <ul>
-        <li>Teaching Assistant, KAIST, IE481 Data-driven Decision Making and Control, (Fall, 2018)</li>        
-        <li>Teaching Assistant, KAIST, IE241 Engineering Statistics 1, (Spring, 2018)</li>
-      </ul>
+          <nav class="profile-links" aria-label="Professional profiles">
+            <a href="assets/Joonho_Bae_CV.pdf">CV</a>
+            <span aria-hidden="true">·</span>
+            <a href="https://scholar.google.com/citations?hl=en&amp;user=TiBgLJMAAAAJ" target="_blank" rel="noreferrer">Google Scholar</a>
+            <span aria-hidden="true">·</span>
+            <a href="https://papers.ssrn.com/sol3/cf_dev/AbsByAuth.cfm?per_id=3558912" target="_blank" rel="noreferrer">SSRN</a>
+            <span aria-hidden="true">·</span>
+            <a href="https://www.linkedin.com/in/joonho-bae" target="_blank" rel="noreferrer">LinkedIn</a>
+          </nav>
+        </div>
+      </aside>
 
-      <h3>Research</h3>
+      <main id="main-content" class="content">
+        <section class="intro" aria-labelledby="about-heading">
+          <h2 id="about-heading" class="visually-hidden">About</h2>
+          <p class="welcome">Welcome! My name is Joonho <span class="pronunciation">(pronounced like Juneau, the capital of Alaska)</span>.</p>
+          <p>
+            I am an Assistant Professor in the Operations and Decision Technologies department at
+            <a href="https://kelley.iu.edu/" target="_blank" rel="noreferrer">Indiana University’s Kelley School of Business</a>.
+            I received my Ph.D. from the
+            <a href="https://michiganross.umich.edu/" target="_blank" rel="noreferrer">Stephen M. Ross School of Business</a>
+            at the University of Michigan.
+          </p>
+          <p>
+            My research develops mathematical models at the intersection of operations, marketing, and engineering.
+            I am particularly interested in sustainable operations, energy markets, battery energy storage systems,
+            risk management, and data-driven decision making.
+          </p>
+          <p>
+            Before academia, I co-founded and led
+            <a href="https://chamsongil.com/" target="_blank" rel="noreferrer">ChamSonGil Cooperative</a>,
+            a social venture supporting blind massage therapists, and worked at SK Telecom as a marketing manager.
+            I hold an M.S. from KAIST and a B.S. from Seoul National University.
+          </p>
+        </section>
 
-      <i style="margin-left: 15px">(International Journals)</i>
-      
-      <ol class="sparse-list">
-        <li>
-          <b>Bae, J.</b>, Kapuscinski, R., and Silberholz, J. "Cost-Saving Synergy: Energy Stacking in Battery Energy Storage Systems," <i>submitted.</i> <a href="http://ssrn.com/abstract=4283236">[link]</a>
-        </li>
-        <li>
-          <b>Bae, J.</b> and Park, J. "Count-based Change Point Detection via Multi-Output Log-Gaussian Cox Processes," <i>IISE Transactions</i>, 2019. <a href="https://doi.org/10.1080/24725854.2019.1676937">[link]</a>
-        </li>
-        <li>
-          <b>Bae, J.</b>, Park, J., Choi, J., and Soh, S. "A Recommending System for Mobile Games using Dynamic Nonparametric Model," <i>submitted</i>.
-        </li>
-        <li>
-          Sim, H., <b>Bae, J.</b>, and Park, J. "Optimal Management of Energy Storage Systems for Wind Turbines," <i>work in Progress</i>.
-        </li>        
-     </ol>
+        <section aria-labelledby="news-heading">
+          <h2 id="news-heading">News</h2>
+          <ol class="news-list">
+            <li>
+              <time datetime="2026">2026</time>
+              <p>Selected as a finalist for the 2026 INFORMS Service Science Cluster Best Paper Competition.</p>
+            </li>
+            <li>
+              <time datetime="2026-05">May 2026</time>
+              <p>Received my Ph.D. in Business Administration from the University of Michigan.</p>
+            </li>
+            <li>
+              <time datetime="2026-01">Jan 2026</time>
+              <p>Joined Indiana University’s Kelley School of Business as an Assistant Professor.</p>
+            </li>
+          </ol>
+        </section>
 
-      <i style="margin-left: 15px">(Conference Presentations)</i>
-      <ol class="sparse-list">
-        <li>
-          The Recommender System for Mobile Applications, <i>2018 Global Marketing Conference</i>, Tokyo, Japan.
-        </li>
-        <li>
-          Frequency-based Anomaly Detection via Multi-Output Log Gaussian Cox Processes, <i>2018 Stochastic Processes and their Applications</i>, Gothenburg, Sweden.
-        </li>
-        <li>
-          An Application of Doubly Stochastic Poisson Process for Detecting Abnormalities, <i>INFORMS Annual Meeting 2018</i>, Phoenix, AZ.
-        </li>
-      </ol>
-           
-      <h3>Awards & Honors</h3>
-      <ul>
-        <li>
-        National Science & Technology Scholarship (2009-2014), KOSAF<br />
-        </li>
-        <li>
-        Social Venture Idea (2014), Ministry of Employment & Labor, Republic of Korea<br />
-        </li>
-        <li>
-        Enactus National Competition (2014), Enactus<br />
-        </li>
-        <li>
-        Hope Advertisement (2014), Seoul Metropolitan Government<br />
-        </li>
-        <li>
-        SCH Social Venture Idea (2013), Soonchunhyang University <br />
-        </li>
-        <li>
-        SK Social Enterprise (2013), SK Happiness Foundation <br />
-        </li>
-        <li>
-        Army Commendation Medal (2012), 8th U.S.ARMY<br />
-        </li>
-      </ul>
+        <section aria-labelledby="papers-heading">
+          <h2 id="papers-heading">Papers</h2>
 
-      <h3>References</h3>
-      <ul>
-        <li>Roman Kapuscinski (Ph.D. Advisor), Professor, Department of Technology and Operations, University of Michigan<br />kapuscin (at) umich.edu</li>
-        <li>John Silberholz (Ph.D. Advisor), Assistant Professor, Department of Technology and Operations, University of Michigan<br />josilber (at) umich.edu</li>
-        <li>Jinkyoo Park (M.S. Advisor), Assistant Professor, Department of Industrial & Systems Engineering, KAIST<br />jinkyoo.park (at) kaist.ac.kr</li>
-        <li>Jeonghye Choi, Associate Professor, Department of Marketing, Yonsei University<br />jeonghye (at) yonsei.ac.kr</li>
-        <li>Seung Bum Soh, Assistant Professor, Department of Operations, Decisions, and Information, Yonsei University<br />sbsoh (at) yonsei.ac.kr</li>
-      </ul>
+          <h3 class="section-label">Working papers</h3>
+          <article class="paper">
+            <h4>
+              <a href="https://papers.ssrn.com/sol3/papers.cfm?abstract_id=5041681" target="_blank" rel="noreferrer">
+                Dynamic Operational versus Financial Hedging for a Risk-Averse Firm
+              </a>
+            </h4>
+            <p class="authors">with Roman Kapuscinski and Wanshan Zhu</p>
+            <p class="status">Major Revision, <em>Management Science</em></p>
+            <div class="paper-links">
+              <a href="https://papers.ssrn.com/sol3/papers.cfm?abstract_id=5041681" target="_blank" rel="noreferrer">SSRN</a>
+            </div>
+          </article>
 
-      <h3>Contact</h3>
-      <p>
-        Joonho Bae <br />
-        baejh (at) umich.edu <br />
-        Ph.D. Candidate <br />
-        914 Hill Street, Suite 229, Ann Arbor, MI 48109-1234 <br />
-      </p>
-    </section>
-  </div>
-</body>
+          <article class="paper">
+            <h4>Dynamic Valuation of a Battery under Performance Degradation</h4>
+            <p class="authors">with Roman Kapuscinski and John Silberholz</p>
+          </article>
+
+          <article class="paper">
+            <h4>Selecting Battery Portfolios: The Value of Heterogeneity</h4>
+            <p class="authors">with Roman Kapuscinski and John Silberholz</p>
+          </article>
+
+          <article class="paper">
+            <h4>
+              <a href="https://papers.ssrn.com/sol3/papers.cfm?abstract_id=6761318" target="_blank" rel="noreferrer">
+                Creators vs. GenAI: Data Sharing and Compensation in Content Markets
+              </a>
+            </h4>
+            <p class="authors">with Zijin Zhang</p>
+            <p class="status">Finalist, 2026 INFORMS Service Science Cluster Best Paper Competition</p>
+            <div class="paper-links">
+              <a href="https://papers.ssrn.com/sol3/papers.cfm?abstract_id=6761318" target="_blank" rel="noreferrer">SSRN</a>
+            </div>
+          </article>
+
+          <article class="paper">
+            <h4>
+              <a href="https://papers.ssrn.com/sol3/papers.cfm?abstract_id=7190478" target="_blank" rel="noreferrer">
+                No Label, No Problem? Retail Dynamics of Label-Free Bottles
+              </a>
+            </h4>
+            <p class="authors">with Yeohong Yoon and Yeolim Bella Yoon</p>
+            <div class="paper-links">
+              <a href="https://papers.ssrn.com/sol3/papers.cfm?abstract_id=7190478" target="_blank" rel="noreferrer">SSRN</a>
+            </div>
+          </article>
+
+          <article class="paper">
+            <h4>Shorter Workweeks Shifting Wallets: How a Sustainable Labor Policy Reshapes Consumer Spending</h4>
+            <p class="authors">with Yeohong Yoon and Yeolim Bella Yoon</p>
+          </article>
+
+          <h3 class="section-label publications-label">Published papers</h3>
+          <article class="paper">
+            <h4>
+              <a href="https://doi.org/10.1287/mnsc.2022.03477" target="_blank" rel="noreferrer">
+                Cost-Saving Synergy: Energy Stacking in Battery Energy Storage Systems
+              </a>
+            </h4>
+            <p class="authors">with Roman Kapuscinski and John Silberholz</p>
+            <p class="status"><em>Management Science</em>, 72(5), 3906–3924, 2026</p>
+            <div class="paper-links">
+              <a href="https://doi.org/10.1287/mnsc.2022.03477" target="_blank" rel="noreferrer">Journal</a>
+            </div>
+          </article>
+
+          <article class="paper">
+            <h4>
+              <a href="https://doi.org/10.1016/j.jbusres.2023.114079" target="_blank" rel="noreferrer">
+                A Recommending System for Mobile Games Using the Dynamic Nonparametric Model
+              </a>
+            </h4>
+            <p class="authors">with Jeonghye Choi, Jinkyoo Park, and Seung-Bum Soh</p>
+            <p class="status"><em>Journal of Business Research</em>, 167, 114079, 2023</p>
+            <div class="paper-links">
+              <a href="https://doi.org/10.1016/j.jbusres.2023.114079" target="_blank" rel="noreferrer">Journal</a>
+            </div>
+          </article>
+
+          <article class="paper">
+            <h4>
+              <a href="https://doi.org/10.1080/24725854.2019.1676937" target="_blank" rel="noreferrer">
+                Count-Based Change-Point Detection via Multi-Output Log-Gaussian Cox Processes
+              </a>
+            </h4>
+            <p class="authors">with Jinkyoo Park</p>
+            <p class="status"><em>IISE Transactions</em>, 52(9), 998–1013, 2020</p>
+            <div class="paper-links">
+              <a href="https://doi.org/10.1080/24725854.2019.1676937" target="_blank" rel="noreferrer">Journal</a>
+            </div>
+          </article>
+
+          <h3 class="section-label publications-label">Work in progress</h3>
+          <article class="paper compact-paper">
+            <h4>Coordinating Customer-Owned Batteries Through Incentives</h4>
+            <p class="authors">with Jerry Anunrojwong and Ali Fattahi</p>
+          </article>
+          <article class="paper compact-paper">
+            <h4>Winds of Uncertainty: How Political Shocks Reshape Daily Life</h4>
+            <p class="authors">with Yeohong Yoon and Eunkyung An</p>
+          </article>
+        </section>
+
+        <section aria-labelledby="teaching-heading">
+          <h2 id="teaching-heading">Teaching</h2>
+
+          <h3 class="section-label">Instructor · Indiana University</h3>
+          <ul class="teaching-list">
+            <li><span>Supply Chain Management with Digital Technologies</span><span>P 319 · Spring 2026</span></li>
+            <li><span>Business Analytics and Modeling</span><span>K 353 · Spring 2026</span></li>
+          </ul>
+
+          <h3 class="section-label teaching-subsection">Instructor · University of Michigan</h3>
+          <ul class="teaching-list">
+            <li><span>Operations Management</span><span>TO 313 · Fall 2021</span></li>
+          </ul>
+          <p class="teaching-note">
+            Recipient of the Gerald and Lillian Dykstra Fellowship for Teaching Excellence and the U-M Graduate Teacher Certificate.
+          </p>
+        </section>
+
+        <section aria-labelledby="experience-heading">
+          <h2 id="experience-heading">Industry Experience</h2>
+          <div class="experience-grid">
+            <article>
+              <p class="experience-years">2013–2015</p>
+              <h3>ChamSonGil Cooperative</h3>
+              <p class="experience-role">Co-Founder &amp; Project Leader</p>
+              <p>
+                Built a social venture supporting blind massage therapists, developing new services and expanding the cooperative nationwide.
+              </p>
+            </article>
+            <article>
+              <p class="experience-years">2015–2017</p>
+              <h3>SK Telecom</h3>
+              <p class="experience-role">Marketing Manager</p>
+              <p>
+                Managed operations across more than 40 retail stores in Seoul and developed tools for mobile-device inventory allocation.
+              </p>
+            </article>
+          </div>
+        </section>
+
+        <footer>
+          <p>© <span id="current-year">2026</span> Joonho Bae</p>
+          <a href="#main-content">Back to top</a>
+        </footer>
+      </main>
+    </div>
+
+    <script src="assets/site.js"></script>
+  </body>
 </html>
