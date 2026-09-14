@@ -139,8 +139,8 @@ button:focus-visible {
 
 .profile-photo {
   display: block;
-  width: min(100%, 224px);
-  aspect-ratio: 1 / 1;
+  width: 160px;
+  height: auto;
   margin: 0 auto 1.55rem;
   border: 5px solid var(--photo-ring);
   border-radius: 50%;
