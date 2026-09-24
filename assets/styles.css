@@ -358,7 +358,7 @@ button:focus-visible {
 
 .paper-card {
   margin-bottom: 1.5rem;
-  padding: clamp(1.35rem, 3vw, 1.8rem);
+  padding: clamp(1.2rem, 2.5vw, 1.55rem);
   border: 1px solid var(--border);
   border-radius: 1rem;
   background: var(--surface);
